@@ -28,7 +28,6 @@ export interface Movie {
 }
 
 interface RootPageProps {
-  name: RootPageProps;
   searchParams: {
     name: string;
   };
@@ -63,9 +62,10 @@ const Home: FC<RootPageProps> = ({ searchParams }) => {
       {/* {searchParams.name ? :} */}
       <div className=" min-h-[70px] h-auto bg-gray-600 relative text-white">
         {!searchParams.name && (
-          <img
+          <Image
             src={`https://image.tmdb.org/t/p/original${movies[0]?.backdrop_path}`}
             alt="movie"
+            fill
             className=" h-auto w-full min-h-[600px] object-cover brightness-50"
           />
         )}
