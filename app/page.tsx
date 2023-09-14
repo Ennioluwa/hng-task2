@@ -60,7 +60,7 @@ const Home: FC<RootPageProps> = ({ searchParams }) => {
   return (
     <div className={dm_sanss.className}>
       {/* {searchParams.name ? :} */}
-      <div className=" min-h-[70px] h-auto bg-gray-600 relative text-white">
+      <div className=" min-h-[110px] h-auto bg-gray-600 relative text-white">
         {!searchParams.name && (
           <img
             src={`https://image.tmdb.org/t/p/original${movies[0]?.backdrop_path}`}
